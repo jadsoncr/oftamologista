@@ -1,0 +1,100 @@
+@import "tailwindcss";
+@import "@fontsource/dm-serif-display/latin-400.css";
+@import "@fontsource/manrope/latin-400.css";
+@import "@fontsource/manrope/latin-500.css";
+@import "@fontsource/manrope/latin-600.css";
+@import "@fontsource/manrope/latin-700.css";
+
+@theme {
+  --font-serif: "DM Serif Display", Georgia, "Times New Roman", serif;
+  --font-sans: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --text-xs: 0.875rem;
+  --text-xs--line-height: 1.5;
+  --text-sm: 1rem;
+  --text-sm--line-height: 1.6;
+  --text-base: 1.0625rem;
+  --text-base--line-height: 1.65;
+
+  --color-petrol: #173B43;
+  --color-petrol-hover: #112C32;
+  --color-petrol-dark: #0D2227;
+  --color-petrol-light: #24525C;
+  --color-warm-white: #F8F7F3;
+  --color-warm-surface: #F2F0EB;
+  --color-warm-border: #E8E6E0;
+  --color-slate-gray: #58656A;
+  --color-slate-light: #738086;
+  --color-light-gray: #E7E9E6;
+  --color-soft-sage: #4A6B60;
+  --color-soft-sage-hover: #678479;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    font-size: 100%;
+    color: #173B43;
+    background-color: #F8F7F3;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    font-weight: 400;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+    font-weight: 400;
+  }
+
+  p {
+    line-height: 1.65;
+  }
+
+  :focus-visible {
+    outline: 2px solid #173B43;
+    outline-offset: 3px;
+  }
+}
+
+body {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: clamp(1.375rem, 2vw, 1.75rem);
+  line-height: 1.3;
+}
+
+button, a {
+  transition: color 180ms cubic-bezier(0.16, 1, 0.3, 1), background-color 180ms cubic-bezier(0.16, 1, 0.3, 1), border-color 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

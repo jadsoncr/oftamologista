@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap e canonical entram no build somente com VITE_SITE_URL válido
+# e com CRM, RQE, endereço, telefone e horários confirmados.

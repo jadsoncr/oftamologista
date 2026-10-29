@@ -1,0 +1,8 @@
+{
+  "name": "Remix Dr. Bruno Gomes — Médico Oftalmologista",
+  "description": "Site profissional de oftalmologia do Dr. Bruno Gomes (RQE 47870, UERJ). Saúde ocular, consultas e agendamento em Copacabana, Rio de Janeiro.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
