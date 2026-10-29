@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
             </div>
 
             <p className="text-xs text-[#58656A] leading-relaxed max-w-sm">
-              Consulta clínica, exame de vista e acompanhamento da saúde ocular. Atendimento planejado em Copacabana, Rio de Janeiro.
+              Consulta particular em oftalmologia e uveítes. Rua Miguel Lemos, 41, 13º andar, Copacabana. Quartas-feiras, pela manhã.
             </p>
 
             <div className="pt-2">
@@ -123,7 +123,7 @@ export const Footer: React.FC = () => {
         {/* Bottom copyright row */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#58656A]/80">
           <p>
-            © {new Date().getFullYear()} {config.doctor.name} · Oftalmologia · CRM-{config.doctor.crmState} a confirmar · RQE {config.doctor.rqe || 'a confirmar'}
+            © {new Date().getFullYear()} {config.doctor.name} · MÉDICO · {config.doctor.crmConfirmed && config.doctor.crm ? config.doctor.crm : `CRM-${config.doctor.crmState} a confirmar`} · RQE {config.doctor.rqe || 'a confirmar'}
           </p>
 
           <button

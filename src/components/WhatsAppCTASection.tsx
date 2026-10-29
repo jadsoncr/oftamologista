@@ -13,8 +13,8 @@ export const WhatsAppCTASection: React.FC = () => {
       text: config.contact.defaultWhatsAppMessage
     },
     {
-      label: 'Exame de vista e óculos',
-      text: `Olá. Gostaria de saber como agendar um exame de vista e orientação sobre grau com o ${config.doctor.name}.`
+      label: 'Consulta de uveíte',
+      text: `Olá. Gostaria de agendar uma consulta particular sobre uveíte com o ${config.doctor.name}.`
     },
     {
       label: 'Acompanhamento clínico',
@@ -41,7 +41,7 @@ export const WhatsAppCTASection: React.FC = () => {
 
             <p className="text-white/80 text-base sm:text-lg leading-relaxed max-w-xl">
               {whatsappUrl
-                ? 'O contato com o consultório é feito pelo WhatsApp confirmado. A equipe informa horários e o que levar no dia.'
+                ? 'O consultório particular é agendado por este WhatsApp. A mensagem pede só o contato para marcar a consulta, sem dados de saúde.'
                 : 'O WhatsApp do consultório ainda não foi confirmado. Esta página não publica número de demonstração e o agendamento fica indisponível até essa confirmação.'}
             </p>
 
@@ -75,11 +75,11 @@ export const WhatsAppCTASection: React.FC = () => {
 
             {/* Reassurance notes */}
             <div className="pt-6 border-t border-white/10 flex flex-wrap gap-x-6 gap-y-2 text-xs text-white/85">
-              <span>Atendimento humanizado</span>
+              <span>Particular</span>
               <span aria-hidden="true" className="text-white/20">·</span>
-              <span>Retorno em horário comercial</span>
+              <span>Pagamento por PIX</span>
               <span aria-hidden="true" className="text-white/20">·</span>
-              <span>Sigilo médico e ético</span>
+              <span>Quarta-feira, manhã</span>
             </div>
 
           </div>

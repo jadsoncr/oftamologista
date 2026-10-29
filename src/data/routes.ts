@@ -16,7 +16,7 @@ export const SITE_ROUTES: SiteRoute[] = [
     published: true,
     title: 'Oftalmologista em Copacabana | Dr. Bruno Gomes',
     description:
-      'Dr. Bruno Gomes, médico oftalmologista. Consulta clínica, exame de vista e orientação sobre grau e óculos. Atendimento planejado em Copacabana, Rio de Janeiro.',
+      'Dr. Bruno Gomes, médico oftalmologista. Consulta particular em oftalmologia e uveítes na Rua Miguel Lemos, 41, Copacabana. Atendimento às quartas-feiras, pela manhã.',
   },
   {
     path: '/consulta',

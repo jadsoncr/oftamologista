@@ -19,10 +19,10 @@ export const ServicesSection: React.FC = () => {
             Áreas de Atuação
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-normal text-[#173B43] tracking-tight leading-[1.18] text-balance">
-            Consulta, exame de vista e cuidado contínuo.
+            Oftalmologia geral, uveítes e exames da consulta.
           </h2>
           <p className="mt-4 text-sm sm:text-base text-[#58656A] leading-relaxed">
-            Consulta clínica, exame de vista, orientação sobre grau e óculos e acompanhamento. A lista descreve o escopo previsto e ainda depende da confirmação do médico.
+            A consulta particular reúne oftalmologia geral e uveítes. Os exames abaixo entram quando a avaliação do dia indica, e não em toda visita.
           </p>
         </div>
 

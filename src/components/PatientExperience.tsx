@@ -10,12 +10,12 @@ export const PatientExperience: React.FC = () => {
     {
       step: '01',
       title: 'Contato com o consultório',
-      description: 'O contato do consultório ainda será publicado. Quando o telefone estiver confirmado, a equipe combina o motivo da visita: revisão, orientação de grau ou uma queixa visual.',
+      description: 'O consultório particular é agendado pelo WhatsApp (21) 98374-6853. Informe o motivo da visita, sem descrever sintomas, exames ou medicamentos na mensagem.',
     },
     {
       step: '02',
       title: 'Disponibilidade de horários',
-      description: 'Os horários de atendimento ainda não foram confirmados. Eles passam a valer na página somente depois dessa confirmação.',
+      description: 'Neste endereço, as consultas são às quartas-feiras, pela manhã. O horário exato de abertura e de encerramento ainda não foi informado.',
     },
     {
       step: '03',

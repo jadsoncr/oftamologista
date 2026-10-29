@@ -19,7 +19,7 @@ export const Hero: React.FC = () => {
             
             {/* Identification Kicker (No pills, clean unboxed tracked uppercase) */}
             <p className="text-xs font-sans font-semibold tracking-[0.12em] uppercase text-[#58656A] mb-4">
-              Oftalmologia clínica
+              Oftalmologia e uveítes
             </p>
 
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-[3.15rem] font-normal text-[#173B43] tracking-tight leading-[1.12] text-balance">
@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
             </h1>
 
             <p className="mt-6 text-base sm:text-lg text-[#58656A] font-normal leading-relaxed max-w-xl text-balance">
-              Dr. Bruno Gomes é médico oftalmologista. O cuidado previsto reúne consulta clínica, exame de vista, orientação sobre grau e óculos e acompanhamento da saúde ocular. O atendimento está planejado para Copacabana, no Rio de Janeiro. O endereço do consultório ainda aguarda confirmação.
+              Dr. Bruno Gomes é médico oftalmologista, com residência e subespecialidade em uveítes pela UERJ. O consultório particular fica na Rua Miguel Lemos, 41, 13º andar, em Copacabana, e atende às quartas-feiras, pela manhã.
             </p>
 
             {/* Action Buttons */}
@@ -90,26 +90,26 @@ export const Hero: React.FC = () => {
         {/* 3-Column Editorial Foundations Strip */}
         <div className="mt-16 lg:mt-24 pt-10 border-t border-[#E7E9E6] grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 text-[#173B43]">
           <div className="space-y-1.5">
-            <p className="text-xs font-semibold tracking-wider uppercase text-[#4A6B60]">01. Consulta Clínica</p>
-            <h3 className="font-serif text-lg font-normal text-[#173B43]">Atenção Individualizada</h3>
+            <p className="text-xs font-semibold tracking-wider uppercase text-[#4A6B60]">01. Consulta</p>
+            <h3 className="font-serif text-lg font-normal text-[#173B43]">Oftalmologia e uveítes</h3>
             <p className="text-xs text-[#58656A] leading-relaxed">
-              Escuta cuidadosa de cada paciente, investigando queixas visuais, histórico clínico e hábitos cotidianos com tempo adequado.
+              Consulta particular para oftalmologia geral e para uveítes, com explicação do que foi observado.
             </p>
           </div>
 
           <div className="space-y-1.5">
-            <p className="text-xs font-semibold tracking-wider uppercase text-[#4A6B60]">02. Rigor Técnico</p>
-            <h3 className="font-serif text-lg font-normal text-[#173B43]">Precisão Diagnóstica</h3>
+            <p className="text-xs font-semibold tracking-wider uppercase text-[#4A6B60]">02. Exames na consulta</p>
+            <h3 className="font-serif text-lg font-normal text-[#173B43]">Quando indicados</h3>
             <p className="text-xs text-[#58656A] leading-relaxed">
-              Exames refrativos detalhados e avaliação da saúde ocular com equipamentos ópticos de alta precisão.
+              Refração, biomicroscopia, fundoscopia, mapeamento de retina, tonometria, gonioscopia e microscopia especular.
             </p>
           </div>
 
           <div className="space-y-1.5">
-            <p className="text-xs font-semibold tracking-wider uppercase text-[#4A6B60]">03. Acompanhamento</p>
-            <h3 className="font-serif text-lg font-normal text-[#173B43]">Clareza & Continuidade</h3>
+            <p className="text-xs font-semibold tracking-wider uppercase text-[#4A6B60]">03. Particular</p>
+            <h3 className="font-serif text-lg font-normal text-[#173B43]">Quarta de manhã</h3>
             <p className="text-xs text-[#58656A] leading-relaxed">
-              Explicações claras em linguagem acessível sobre diagnóstico, adaptação a correções e prevenção da visão ao longo do tempo.
+              Atendimento particular, com pagamento por PIX. O agendamento do consultório é pelo WhatsApp.
             </p>
           </div>
         </div>

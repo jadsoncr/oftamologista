@@ -41,6 +41,12 @@ export interface ClinicConfig {
     metroAccess: string;
     parkingInfo: string;
     accessibilityInfo: string;
+    otherSites: {
+      name: string;
+      detail: string;
+      href?: string;
+      upcoming?: boolean;
+    }[];
     openingHours: {
       days: string;
       hours: string;

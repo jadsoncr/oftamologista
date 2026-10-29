@@ -82,9 +82,9 @@ try {
     'drbrunogomes.med.br',
     'Cardeal',
     'Siqueira Campos',
-    'Leme',
     'Ipanema',
     'Botafogo',
+    '520109521',
   ];
   for (const term of banned) {
     if (published.includes(term)) {
@@ -94,8 +94,11 @@ try {
   const h1Count = published.match(/<h1[\s>]/g)?.length ?? 0;
   if (h1Count !== 1) throw new Error(`A home precisa de um H1. Encontrados: ${h1Count}`);
   if (!published.includes('FAQPage')) throw new Error('FAQ visível sem FAQPage no HTML');
-  if (published.includes('MedicalClinic') || published.includes('PostalAddress')) {
-    throw new Error('Schema de negócio foi emitido sem entidade confirmada');
+  if (!published.includes('MedicalClinic') || !published.includes('PostalAddress')) {
+    throw new Error('Schema do consultório confirmado não foi emitido');
+  }
+  if (!published.includes('Miguel Lemos') || !published.includes('1095218')) {
+    throw new Error('Endereço ou CRM confirmado ausente no HTML');
   }
 } finally {
   await vite.close();

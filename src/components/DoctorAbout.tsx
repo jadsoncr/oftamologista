@@ -16,7 +16,7 @@ export const DoctorAbout: React.FC = () => {
             Apresentação Profissional
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-normal text-[#173B43] tracking-tight leading-[1.18] text-balance">
-            Medicina com escuta atenta, precisão técnica e clareza diagnóstica.
+            Oftalmologia geral e uveítes, com formação na UERJ.
           </h2>
         </div>
 
@@ -53,21 +53,26 @@ export const DoctorAbout: React.FC = () => {
                 {config.doctor.name}
               </h3>
               <p className="text-base text-[#173B43] mt-2">
-                MÉDICO · {config.doctor.specialty.replace(/^Médico\s+/i, '')} · RQE {config.doctor.rqe || 'a confirmar'}
+                MÉDICO · {config.doctor.specialty.replace(/^Médico\s+/i, '')} · {config.doctor.subspecialty} · RQE {config.doctor.rqe || 'a confirmar'}
+              </p>
+              <p className="text-sm text-[#58656A] mt-1">
+                Registro profissional: Bruno da Silva Gomes
               </p>
             </div>
 
             {/* Objective Bio Paragraphs */}
             <div className="space-y-4 text-sm sm:text-base text-[#58656A] leading-relaxed">
               <p className="text-[#173B43] font-medium text-base sm:text-lg">
-                Oftalmologista clínico. A consulta, o exame de vista e o acompanhamento estão previstos para Copacabana, com tempo para explicar o que foi observado.
+                Consulta particular em Copacabana, com foco em oftalmologia geral e uveítes.
               </p>
               <p>
                 {config.doctor.bio}
               </p>
-              <p>
-                As consultas são planejadas para que cada paciente compreenda detalhadamente suas condições oculares, tirando dúvidas sem pressa e recebendo orientações claras sobre prevenção, adaptação a correções ópticas e cuidados com a rotina visual.
-              </p>
+              <ul className="space-y-1">
+                {config.doctor.complementaryEducation.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
             </div>
 
             {/* Clean Typographic Credentials with fine hairline rules (no repetitive cards) */}
@@ -82,7 +87,7 @@ export const DoctorAbout: React.FC = () => {
                     {config.doctor.rqe ? `RQE ${config.doctor.rqe}` : 'A confirmar'}
                   </p>
                   <p className="text-xs text-[#58656A] mt-0.5">
-                    {config.doctor.rqeConfirmed ? 'Registro informado pelo médico' : 'Número informado no projeto, pendente de validação'}
+                    {config.doctor.rqeConfirmed ? 'Oftalmologia' : 'Número informado no projeto, pendente de validação'}
                   </p>
                 </div>
 
@@ -109,7 +114,7 @@ export const DoctorAbout: React.FC = () => {
                     : 'A confirmar antes da publicação'}
                 </p>
                 <p className="text-xs text-[#58656A] mt-1">
-                  Graduação, residência e títulos só aparecem depois da validação do médico.
+                  Residência em Oftalmologia e subespecialidade em uveítes. O título em Clínica Médica ainda não foi concluído.
                 </p>
               </div>
 

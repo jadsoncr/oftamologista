@@ -13,7 +13,7 @@ interface ConfigContextValue {
   getWhatsAppUrl: (customText?: string) => string | null;
 }
 
-const STORAGE_KEY = 'dr_bruno_gomes_clinic_config_v3';
+const STORAGE_KEY = 'dr_bruno_gomes_clinic_config_v4';
 
 const ConfigContext = createContext<ConfigContextValue | undefined>(undefined);
 

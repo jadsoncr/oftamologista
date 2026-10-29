@@ -33,7 +33,7 @@ export const ClinicSection: React.FC = () => {
             O Consultório
           </h2>
           <p className="mt-4 text-sm sm:text-base text-[#58656A] leading-relaxed">
-            A área prevista é Copacabana, no Rio de Janeiro. O logradouro, o CEP, o telefone e os horários permanecem fora da página até serem confirmados. Fotos do consultório também aguardam imagem autorizada.
+            Consultório particular em Copacabana. O atendimento neste endereço é às quartas-feiras, pela manhã. Fotos da sala ainda não foram enviadas.
           </p>
         </div>
 
@@ -157,7 +157,7 @@ export const ClinicSection: React.FC = () => {
             )}
 
             <p className="text-xs text-[#58656A] leading-relaxed">
-              O atendimento previsto é com horário marcado, para haver tempo de exame e explicação.
+              Consulta particular, com horário marcado e pagamento por PIX. O início e o fim da manhã ainda não foram informados.
             </p>
 
             <div className="pt-4">
@@ -169,6 +169,39 @@ export const ClinicSection: React.FC = () => {
           </div>
 
         </div>
+
+        {config.office.otherSites.length > 0 ? (
+          <div className="mt-14 pt-10 border-t border-[#E7E9E6] max-w-3xl">
+            <p className="text-xs font-sans font-semibold tracking-wider uppercase text-[#4A6B60]">
+              Outros locais
+            </p>
+            <p className="mt-3 text-sm text-[#58656A] leading-relaxed">
+              O consultório particular não divulga convênio. O atendimento hospitalar fica separado, com agendamento próprio.
+            </p>
+            <ul className="mt-6 space-y-4">
+              {config.office.otherSites.map((site) => (
+                <li key={site.name}>
+                  <p className="text-base text-[#173B43] font-medium">
+                    {site.name}
+                    {site.upcoming ? ' · em breve' : ''}
+                  </p>
+                  <p className="text-sm text-[#58656A] leading-relaxed mt-1">{site.detail}</p>
+                  {site.href ? (
+                    <a
+                      href={site.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-2 text-sm font-semibold text-[#173B43] hover:text-[#4A6B60]"
+                    >
+                      Marcar na Rede D’Or
+                      <ArrowUpRight className="w-3.5 h-3.5" />
+                    </a>
+                  ) : null}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
 
       </div>
     </section>
